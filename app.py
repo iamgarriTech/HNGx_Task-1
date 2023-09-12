@@ -12,8 +12,8 @@ def is_valid_url(url):
 def get_info():
     slack_name = request.args.get('slack_name')
     track = request.args.get('track')
-    github_file_url = request.args.get('https://github.com/Anthonyogar/HNG-X/blob/main/app.py')
-    github_repo_url = request.args.get('https://github.com/Anthonyogar/HNG-X/tree/main')
+    github_file_url = request.args.get('https://github.com/treasureTheWhiz/HNGx_Task-1/tree/main/app.py')
+    github_repo_url = request.args.get('https://github.com/treasureTheWhiz/HNGx_Task-1/tree/main')
 
     # Input validation
     # if not slack_name or not track or not github_file_url or not github_repo_url:
@@ -32,8 +32,8 @@ def get_info():
             'current_day': current_day,
             'utc_time': utc_time,
             'track': track,
-            'github_file_url': 'https://github.com/Anthonyogar/HNG-X/blob/main/app.py',
-            'github_repo_url': 'https://github.com/Anthonyogar/HNG-X/tree/main',
+            'github_file_url': 'https://github.com/treasureTheWhiz/HNGx_Task-1/tree/main/app.py',
+            'github_repo_url': 'https://github.com/treasureTheWhiz/HNGx_Task-1/tree/main',
             'status_code': status_code
         }
 
